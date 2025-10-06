@@ -4,17 +4,7 @@ This repository contains an automated suit of test using Cypress to test the web
 The goal of this project is to desmostrate automation testing skills. 
 
 ## Structure
-cypress/ 
-├── e2e/ 
-│ ├── dropdown.cy.js 
-│ ├── login.cy.js 
-│ └── tables.cy.js 
-├── pages/ 
-│ ├── DropdownPage.js 
-│ ├── LoginPage.js 
-│ └── TablesPage.js 
-└── support/ 
-  └── e2e.js
+cypress/ ├── e2e/ │ ├── dropdown.cy.js │ ├── login.cy.js │ └── tables.cy.js ├── pages/ │ ├── DropdownPage.js │ ├── LoginPage.js │ └── TablesPage.js └── support/ └── e2e.js
 
 ## Test scripts
 Defined in package.json
