@@ -5,7 +5,6 @@ class TablesPage {
             headers: '#table1 th',
             tbodyRows: '#table1 tbody tr',
             dueColumnIndex: 3
-
         };
     }
 

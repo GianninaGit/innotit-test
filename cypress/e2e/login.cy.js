@@ -5,9 +5,7 @@ describe('Login tests', () => {
     const VALID_USERNAME = Cypress.env('USERNAME');
     const VALID_PASSWORD = Cypress.env('PASSWORD');
 
-    beforeEach(() => {
-        loginPage.visit();
-    });
+    beforeEach(() => loginPage.visit());
 
     it('Login exitoso con credenciales válidas', () => {
         loginPage.login(VALID_USERNAME, VALID_PASSWORD);
