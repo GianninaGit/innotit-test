@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:dropdown": "cypress run --spec 'cypress/e2e/dropdown.cy.js'",
+    "cy:login": "cypress run --spec 'cypress/e2e/login.cy.js'",
+    "cy:tables": "cypress run --spec 'cypress/e2e/tables.cy.js'"
   },
   "keywords": [],
   "author": "",
