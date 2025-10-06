@@ -11,13 +11,10 @@ describe('Dropdown tests', () => {
         dropdownPage.verifyDefaultOption();
     });
 
-    it('Seleccionar Option 1 y validar', () => {
-        dropdownPage.selectOption('1');
-        dropdownPage.verifySelected('1');
-    });
-
-    it('Seleccionar Option 2 y validar', () => {
-        dropdownPage.selectOption('2');
-        dropdownPage.verifySelected('2');
+    ['1', '2'].forEach(option => {
+        it(`Seleccionar Option ${option} y validar`, () => {
+            dropdownPage.selectOption(option);
+            dropdownPage.verifySelected(option);
+        });
     });
 });
