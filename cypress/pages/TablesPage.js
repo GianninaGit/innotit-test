@@ -3,7 +3,9 @@ class TablesPage {
         this.locators = {
             table1: '#table1',
             headers: '#table1 th',
-            tbodyRows: '#table1 tbody tr'
+            tbodyRows: '#table1 tbody tr',
+            dueColumnIndex: 3
+
         };
     }
 
@@ -12,13 +14,15 @@ class TablesPage {
     }
 
     getDueOfRow(rowIndex) {
-        return cy.get(`${this.locators.tbodyRows}`).eq(rowIndex).find('td').eq(3);
+        return cy.get(`${this.locators.tbodyRows}`)
+                  .eq(rowIndex).find('td')
+                  .eq(this.locators.dueColumnIndex);
     }
 
     sortByHeader(headerText) {
         cy.get(this.locators.headers)
-            .contains(headerText)
-            .click();
+          .contains(headerText)
+          .click();
     }
 }
 
