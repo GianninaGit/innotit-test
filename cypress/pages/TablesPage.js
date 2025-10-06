@@ -8,7 +8,7 @@ class TablesPage {
     }
 
     visit() {
-        cy.visit('https://the-internet.herokuapp.com/tables');
+        cy.visit('/tables');
     }
 
     getDueOfRow(rowIndex) {
